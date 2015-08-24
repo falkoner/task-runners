@@ -17,3 +17,5 @@ Grunt relies on having a Gruntfile.js so lets create one and do our work there.
 ```
 touch Gruntfile.js
 ```
+
+View full instructions [here](https://discussions.udacity.com/t/grunt-and-setting-up-a-grunt-workflow-intermediate/21984)
