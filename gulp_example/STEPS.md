@@ -16,3 +16,24 @@ gulp.task('default', function() {
   //code will go in here
 });
 ```
+
+General patterin is to install required tools:
+```
+npm install --save-dev gulp-uglify gulp-rename
+```
+
+And then define tasks to use them via pipe:
+```
+var gulp = require('gulp'),
+  uglify = require('gulp-uglify'),
+    rename = require('gulp-rename');
+
+gulp.task('scripts', function(){
+  gulp.src('js/*.js')
+    .pipe(uglify())
+        .pipe(rename('app.min.js'))
+    .pipe(gulp.dest('js/'));
+});
+
+gulp.task('default', ['scripts']);
+```
