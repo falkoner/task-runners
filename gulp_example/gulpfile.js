@@ -22,7 +22,7 @@ var paths = {
 
 // Compiles scss files and outputs them to build/css/*.css
 gulp.task('styles', function(){
-    return gulp.src(paths.stylesheets)
+    return gulp.src(paths.styles)
                 .pipe(sass())
                 .pipe(gulp.dest('./build/css'));
 });
