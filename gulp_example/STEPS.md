@@ -37,3 +37,5 @@ gulp.task('scripts', function(){
 
 gulp.task('default', ['scripts']);
 ```
+
+See more instructions [here](https://discussions.udacity.com/t/gulp-and-setting-up-a-gulp-workflow-intermediate/24359/3)
